@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+}
+
+#root {
+    min-height: 100vh; /* Full viewport height */
+    position: relative;
+    overflow-x: hidden;  
+    
+}
+
+body{
+    
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient( rgba(2,0,36,1) 0%, rgba(7,51,66,1) 28%, rgba(3,147,185,1) 66%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: antiquewhite;
+   background-color:rgba(2,0,36,1);
+}
+b{
+    color: #422407;
+}
+
+
+
+.bg1{
+  
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  top: 0;
+}
+
+ 
+
+/* .bg2{
+border: solid red;
+  position: relative;
+  height: 100vh;
+  z-index: -1;
+  top: 100px; 
+} */
+.nav-bar:hover{
+    color: white;
+}
+.nav-bar::after{
+   
+   background-color: #ffffff;
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 5px;
+  bottom: 0;
+  width: 0px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.nav-bar:hover:after{
+    width: 90%;
+}
+
+
+
+
+
+.Home{
+  
+    margin: 200px 0px;
+    z-index: 1;
+    position: relative;
+    left: 13%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 70%;
+    color: antiquewhite;
+    
+}
+
+.animi-computer{
+    margin-top: 60px;
+    padding: 0px;
+    width: 320px
+}
+
+
+
+.Home-text>p{
+    font-size: 3rem;
+    padding-top: 100px;
+    margin-bottom: 0;
+    
+    
+}
+
+.Home-text>h1{
+    font-size: 3rem;
+    padding-top: 0px;
+    margin: 0;
+}
+
+.Home-text>h2{
+    font-size: 2rem;
+}
+
+
+
+.intro{
+    z-index: 1;
+    margin: 200px 0px;
+    position: relative; 
+    margin-top:300px;
+    left: 13%;
+    width: 60%;
+    
+    
+}
+.intro > h1{
+    font-size: 3rem;
+    color:antiquewhite;
+    padding-top: 0px;
+    margin: 0;
+}
+
+.intro > P{
+    font-size: 1.5rem;
+    padding-top: 0;
+    margin-bottom: 0;
+    color:antiquewhite;
+    line-height: 1.5;
+}
+
+.footer{
+    font-weight: normal;
+    display: flex;
+    justify-content: space-around;
+    color: antiquewhite ;
+}
+
+.footer-links{
+   
+    padding-bottom: 10px;
+    gap: 10px;
+    display: flex;
+}
+.footer>h4{
+    font-weight:lighter;
+}
+
+@media(max-width:900px){
+    .Home{
+        margin: 100px 0px;
+    }
+    .Home-text>p{
+        font-size: 2.5rem;
+        
+        
+        
+    }
+    .animi-computer{
+        width: 290px
+    }
+    
+    .Home-text>h1{
+        font-size: 2.5rem;
+       
+    }
+    
+    .Home-text>h2{
+        font-size: 1.5rem;
+    }
+
+    .intro{
+        margin: 200px 0px 100px 0px;
+        min-height: 250px;
+        width: 70%; 
+        
+    }
+    .intro > h1{
+        font-size: 2.0rem;
+        
+    }
+    
+    .intro > P{
+        font-size: 1.4rem;
+        
+    }
+    .footer-links{
+        font-size: 10px
+    }
+    .footer>h4{
+        font-size: 10px
+    }
+}
+@media(max-width:600px){
+    .intro{
+        min-height: 250px;
+        width: 70%; 
+        
+    }
+    .intro > h1{
+        font-size: 2rem;
+        
+    }
+    
+    .intro > P{
+        font-size: 1rem;
+        
+    }
+}
+
+/* about page */
+.about-page{
+    display: block;
+    margin: 200px 0px;
+    
+    
+}
+.about{
+   
+    position: relative;
+    left: 3%;
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+   
+}
+.about-text{
+   
+    width: 50%;
+}
+.about-text>p{
+    font-size: 1.5rem;
+    margin-top: 30px;
+    line-height: 1.4;
+}
+
+.about-lottie{
+ 
+    width: 400px;
+    margin-bottom: 200px;
+}
+@media(max-width:950px){
+    .about-page{
+        margin: 100px 0px;
+    }
+    .about{
+        left: 3%;
+        width: 95%;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    .about-text{
+        width: 90%;
+    }
+    .about-text>h1{
+        font-size: 1.8rem;
+
+    }
+    .about-text>p{
+        font-size: 1.3rem;
+    }
+    
+    .about-lottie{
+        width: 500px;
+    }
+
+}
+
+@media(max-width:600px){
+    .about-text{
+        width: 90%;
+    }
+    .about-text>h1{
+        font-size: 1.5rem;
+
+    }
+    .about-text>p{
+        font-size: 1rem;
+    }
+    
+    .about-lottie{
+        width: 350px;
+    }
+
+
+}
+
+.profession_text{
+   text-align: center;
+   margin-bottom: 50px;
+}
+.skill{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 25%;
+    position: relative;
+    bottom: 0
+    
+}
+.skill-box{
+    border: 3px solid #422407;
+    width: max(15%,170px);
+    height: 170px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    margin: 0px 25px 25px 0px; 
+    transition: all 0.3s;
+}
+
+.skill-box:hover{
+    transform: scale(1.2);
+    box-shadow: 0 2px 8px 0 #422407;
+
+}
+
+.project-container{
+    margin: 70px auto 500px;
+    display: flex;
+    justify-content: center;
+}
+.project{
+
+    margin: 70px 0px;
+}
+@media(max-width:950px){
+    .profession_text{
+        font-size: 1.8rem;
+    }
+    .skill{
+        margin: 50px 5%;
+    }
+    .skill-box{
+        width: max(15%,130px);
+        height: 130px; 
+    }
+    
+
+}
+
+
+.resume-container{
+    margin: 70px 0px 10px 0px;
+}
+.resume{
+    margin: 70px auto 70px;
+    padding-top: 50px;
+    width: fit-content;
+    position: relative;
+    text-align: center;
+
+}
+.resume-pdf{
+    pointer-events: none;
+}
+
+.downloadCV{
+    cursor:pointer;
+    margin-top: 30px;
+    width: 200px;
+    height: 40px;
+    font-size: large;
+    border-radius: 12px;
+    border-style: none;
+    background-color: #422407;
+    color: antiquewhite;
+    font-weight: bold;
+    
+}
+
+.downloadCV:hover{
+    transition: all 0.5s;
+    background-color: white;
+    color: #422407;
+}
