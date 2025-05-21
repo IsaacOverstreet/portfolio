@@ -4,7 +4,7 @@ import Animation from "./component/Lottie/shooting stars.json"
 import Home from "./component/Home";
 import NavBar from "./component/NavBar";
 import Footer from "./component/Footer";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate} from "react-router-dom";
 import About from "./component/About"
 import Project from "./component/Project"
 import Resume from "./component/Resume"
@@ -13,7 +13,7 @@ import MoveToTop from "./component/MoveToTop";
 
 
 function App() {
- 
+ const navigate = useNavigate
 
   return (
     <div className="app-container">
@@ -27,12 +27,16 @@ function App() {
         <NavBar/>
         <MoveToTop/>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
+        
+        <Routes >
+          <Route path="/"   element={<Home />} exact/>
           <Route path="/About" element={<About />} />
           <Route path="/Project" element={<Project />} />
           <Route path="/Resume" element={<Resume />} />
+          
+          
         </Routes>
+      
       
        
         <Footer/> 

@@ -140,6 +140,8 @@ border: solid red;
 }
 
 .footer{
+    
+    margin-top: auto;
     font-weight: normal;
     display: flex;
     justify-content: space-around;
@@ -192,7 +194,13 @@ border: solid red;
     
     .intro > P{
         font-size: 1.4rem;
+        margin-top: auto;
         
+    }
+
+    .footer{
+        margin-top: auto;
+      
     }
     .footer-links{
         font-size: 10px
@@ -356,6 +364,9 @@ border: solid red;
 
 
 .resume-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
     margin: 70px 0px 10px 0px;
 }
 .resume{

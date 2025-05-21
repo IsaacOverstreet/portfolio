@@ -10,7 +10,7 @@ return(
             <div className="about-text">
                 <h1>Get to know me</h1>
                 <p>
-                    Hi my name is <b>Morakinyo Isaac</b>from Lagos Nigeria.
+                    Hi my name is <b>Morakinyo Isaac</b> from Lagos Nigeria.
                     I am a <b>Web Developer</b> currently seeking an internship to apply my skills in a professional setting, collaborate with experience developers, gaining hands-on experience and building innovative web solutions.<br/><br/>
                     I love creating original project with beautiful design for the frontend and developing effective solutions for the backend.<br/>
                     I am open to collaborations or working where i can contribute and grow. <br/><br/>
