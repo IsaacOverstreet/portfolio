@@ -33,10 +33,10 @@ function Home() {
           projects and continue growing professionally.
           <br />
           <br />I specialize in building scalable, user-friendly Web
-          applications using <b>Typescript, React.js and Next.js</b> on the
-          Frontend, with <b>Node.js</b> handling the backend logic. I regularly
-          use MongoDB as my preferred database solution and am actively
-          deepening my expertise in it.
+          applications using <b>Typescript, React.js </b> on the Frontend, with{" "}
+          <b> Next.js or Node.js</b> handling the backend logic. I regularly use
+          MongoDB as my preferred database solution and am actively deepening my
+          expertise in it.
         </p>
       </div>
     </div>
