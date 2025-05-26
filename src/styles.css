@@ -9,6 +9,18 @@
   position: relative;
   overflow-x: hidden;
 }
+.element-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.loader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 body {
   font-family: "Raleway", sans-serif;
@@ -35,13 +47,6 @@ b {
   top: 0;
 }
 
-/* .bg2{
-border: solid red;
-  position: relative;
-  height: 100vh;
-  z-index: -1;
-  top: 100px; 
-} */
 .nav-bar:hover {
   color: white;
 }
@@ -138,6 +143,10 @@ border: solid red;
 }
 
 @media (max-width: 900px) {
+  .spinner {
+    width: 150px;
+    height: 150px;
+  }
   .Home {
     margin: 100px 0px;
   }
@@ -293,13 +302,104 @@ border: solid red;
   box-shadow: 0 2px 8px 0 #422407;
 }
 
-.project-container {
-  margin: 70px auto 500px;
+/* .project-container {
+  border: solid black;
   display: flex;
   justify-content: center;
-}
+  width: 100%;
+} */
 .project {
-  margin: 70px 0px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.projectCard {
+  width: 70%;
+  margin-top: 20px;
+
+  min-height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projectCard-Container {
+  background-color: rgba(7, 51, 66, 0.223);
+  border-radius: 10px;
+  width: 45%;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.project-img {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.title {
+  font-family: "Times New Roman", Times, serif;
+}
+.desc {
+  min-height: 100px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  padding: 5px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.link1 {
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 5px;
+  margin-right: 5px;
+  border-style: hidden;
+  width: 60px;
+  height: 30px;
+  transition: all 0.3s;
+}
+
+.link1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px 0 #422407;
+}
+
+@media (max-width: 674px) {
+  .projectCard {
+    width: 75%;
+    margin-top: 20px;
+    min-height: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectCard-Container {
+    background-color: rgba(7, 51, 66, 0.223);
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
 }
 @media (max-width: 950px) {
   .profession_text {
@@ -350,3 +450,10 @@ border: solid red;
   background-color: white;
   color: #422407;
 }
+
+/* .projectContainer {
+  border: solid;
+  width: 400px;
+  height: 400px;
+}
+*/
